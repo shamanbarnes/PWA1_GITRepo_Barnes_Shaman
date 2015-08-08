@@ -37,3 +37,25 @@
             var minDamage2 = player2Damage * .5;
             var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
             var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
+
+            //inflict damage
+
+            playerOneHealth = playerOneHealth - f1;
+            playerTwoHealth = playerTwoHealth - f2;
+
+            console.log(playerOneName+" : "+ playerOneHealth +"  " + playerTwoName + " : " + playerTwoHealth);
+
+            var results = winnerCheck();
+            console.log(results);
+
+            if(results === "no winner"){
+                round++;
+                alert(playerOneName+" : "+ playerOneHealth +" *ROUND " +round+" OVER*  " + playerTwoName + " : " + playerTwoHealth);
+            }else{
+
+                alert(results);
+                break;
+            };
+        };
+        winnerCheck()
+    };
