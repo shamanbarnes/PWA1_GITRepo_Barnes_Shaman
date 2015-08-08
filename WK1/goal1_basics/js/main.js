@@ -59,3 +59,8 @@
         };
         winnerCheck()
     };
+
+
+    function winnerCheck(){
+
+        alert(playerOneName+ " : "+ playerOneHealth +" " + playerTwoName + " : " + playerTwoHealth);
