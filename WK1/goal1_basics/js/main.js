@@ -23,3 +23,5 @@
 
     var playerOneHealth = 100;
     var playerTwoHealth = 100;
+
+    var round = 0;
